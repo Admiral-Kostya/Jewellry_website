@@ -136,7 +136,7 @@ showModal.addEventListener("click", (e) => {
 const modalInterval = setTimeout(showModalWindow, 3000);
 
 $(window).scroll(function () {
-  if ($(this).scrollTop() > 400) {
+  if ($(this).scrollTop() > 800) {
     $(".pageup").fadeIn();
   } else {
     $(".pageup").fadeOut();
