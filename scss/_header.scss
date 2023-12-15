@@ -50,7 +50,7 @@
 
     &_active {
       font-weight: 700;
-      color: #d58417;
+      color: $activeMenuLinkColor;
       text-decoration: underline;
     }
 
@@ -108,10 +108,11 @@
     border: 1px solid #185768;
     color: #fff;
     display: block;
-    background-color: #0e333d;
+    background-color: $mainDarkColor;
     padding: 10px 20px;
     font-family: "Merriweather";
-    line-height: 1;
+    font-size: 16px;
+    line-height: 1.2;
     letter-spacing: 1.2px;
   }
 }

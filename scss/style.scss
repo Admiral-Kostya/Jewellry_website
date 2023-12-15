@@ -1,25 +1,9 @@
-body {
-  background-color: #fff9f4;
-}
-.wrapper {
-  overflow: clip; /* //позволяет работать с position: sticky; */
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.wrapper > main {
-  flex-grow: 1;
-}
-[class*="__container"] {
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0 15px;
-  box-sizing: content-box;
-}
 // Шрифти
 @import "_fonts.scss";
 // Обнулення стилів
 @import "_reset.scss";
+// Змінні
+@import "_variables.scss";
 // Загальні стилі
 @import "_common-btn.scss";
 @import "_common-title.scss";
@@ -36,3 +20,22 @@ body {
 // Додаткові секції
 @import "_modal.scss";
 @import "_pageUp.scss";
+
+body {
+  background-color: $mainBgColor;
+}
+.wrapper {
+  overflow: clip; /* //позволяет работать с position: sticky; */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}

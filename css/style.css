@@ -6,36 +6,6 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:regular&display=swap");
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
-body {
-  background-color: #fff9f4;
-}
-
-.wrapper {
-  overflow: clip; /* //позволяет работать с position: sticky; */
-  min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.wrapper > main {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-[class*=__container] {
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0 15px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
 *,
 *::before,
 *::after {
@@ -155,9 +125,9 @@ textarea {
   }
   .common-btn:hover,
   .common-btn-design:hover {
-    background-color: #1b3840;
-    -webkit-box-shadow: 2px 2px 10px #1b3840;
-            box-shadow: 2px 2px 10px #1b3840;
+    background-color: #0e333d;
+    -webkit-box-shadow: 2px 2px 10px #0e333d;
+            box-shadow: 2px 2px 10px #0e333d;
   }
 }
 .common-title-block {
@@ -324,7 +294,8 @@ textarea {
   background-color: #0e333d;
   padding: 10px 20px;
   font-family: "Merriweather";
-  line-height: 1;
+  font-size: 16px;
+  line-height: 1.2;
   letter-spacing: 1.2px;
 }
 
@@ -659,22 +630,6 @@ textarea {
        object-position: top;
   }
 }
-/* @media (max-width: 500px) {
-  .block-design {
-    &__image {
-      flex-direction: column;
-      row-gap: 30px;
-    }
-    &__image-block {
-      padding: 0;
-    }
-    &__items {
-      &:last-child {
-        padding: 0;
-      }
-    }
-  }
-} */
 @media (max-width: 515px) {
   .block-design__image {
     row-gap: 20px;
@@ -1953,4 +1908,34 @@ textarea {
 }
 .pageup img {
   width: 100%;
+}
+
+body {
+  background-color: #fff9f4;
+}
+
+.wrapper {
+  overflow: clip; /* //позволяет работать с position: sticky; */
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+[class*=__container] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }

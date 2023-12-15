@@ -3,7 +3,7 @@
   white-space: nowrap;
   text-align: center;
   color: white;
-  background-color: #0e333d;
+  background-color: $mainDarkColor;
   border-radius: 5px;
   line-height: 1;
 }
@@ -40,7 +40,7 @@
   }
   .common-btn:hover,
   .common-btn-design:hover {
-    background-color: #1b3840;
-    box-shadow: 2px 2px 10px #1b3840;
+    background-color: $mainDarkColor;
+    box-shadow: 2px 2px 10px $mainDarkColor;
   }
 }
